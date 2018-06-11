@@ -1,0 +1,25 @@
+{
+  "name": "Stripe Balance",
+  "description": "Displays your current available balance on Stripe",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "finance",
+  "bundleID": "com.fiplab.stripebalance",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 60,
+  "refreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Stripe API Secret Key",
+      "name": "key",
+      "type": "string",
+      "tooltip": "The Secret Key for your Stripe Account",
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "currency-formatter": "^1.4.2",
+    "stripe": "^5.8.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Stock Price Tracker",
+  "description": "Displays the stock price for a given stock symbol",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "finance",
+  "bundleID": "com.fiplab.stockprice",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 60,
+  "refreshInterval": 300,
+
+  "user_options": [
+    {
+      "title": "Alpha Vantage API Key",
+      "name": "apiKey",
+      "type": "string",
+      "required": true
+    },
+    {
+      "title": "Symbol",
+      "name": "symbol",
+      "type": "string",
+      "required": true
+    },
+    {
+      "title": "Show",
+      "name": "display",
+      "type": "string",
+      "default": "both",
+      "options": [
+        {"title": "Price", "name":"price"},
+        {"title": "Percent Change", "name":"change"},
+        {"title": "Price (Percent Change)", "name":"both"},
+      ],
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "alphavantage": "^1.1.1"
+  }
+}

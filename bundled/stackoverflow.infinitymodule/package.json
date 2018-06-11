@@ -1,0 +1,21 @@
+{
+  "name": "StackOverflow Reputation",
+  "description": "Displays your reputation on StackOverflow",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "social",
+  "bundleID": "com.fiplab.stackoverflow",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "User ID",
+      "name": "userID",
+      "type": "string",
+      "tooltip": "The Stack Overflow user ID",
+      "required": true,
+    },
+
+  ]  
+}

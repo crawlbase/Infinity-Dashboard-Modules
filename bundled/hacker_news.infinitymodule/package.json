@@ -1,0 +1,21 @@
+{
+  "name": "Hacker News Karma",
+  "description": "Displays your Karma on Hacker News",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "social",
+  "bundleID": "com.fiplab.hackernews",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Hacker News Username",
+      "name": "username",
+      "type": "string",
+      "tooltip": "Your Hacker News user name",
+      "required": true,
+    },
+
+  ]  
+}

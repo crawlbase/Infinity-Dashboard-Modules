@@ -1,0 +1,21 @@
+{
+  "name": "Fantasy Premier League Points",
+  "description": "Displays the total number of game week points for your team on fantasy.premierleague.com",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "sports",
+  "bundleID": "com.fiplab.fantasy.premierleague.com",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Player ID",
+      "name": "playerID",      
+      "type": "string",
+      "tooltip": "Your fantasy.premierleague.com Player ID",
+      "default": "",
+      "required": true,
+    },
+  ]  
+}

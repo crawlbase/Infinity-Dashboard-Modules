@@ -1,0 +1,18 @@
+{
+  "name": "US Market Stock Price",
+  "description": "Displays the stock price for the given symbol in the US Markets",
+  "author": "Jeremy Hyle",
+  "website": "https://infinitydashboard.com/",
+  "category": "finance",
+  "bundleID": "com.jeremyhyle.usstockprice",
+  "version": "1.0.0",
+
+  "user_options": [
+    {
+      "title": "Symbol",
+      "name": "symbol",      
+      "type": "string",
+      "required": true,
+    }
+  ]  
+}

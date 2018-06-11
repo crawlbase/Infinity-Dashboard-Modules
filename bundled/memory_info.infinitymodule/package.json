@@ -1,0 +1,25 @@
+{
+  "name": "Memory Stats",
+  "description": "Displays stats about your memory",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "utilities",
+  "bundleID": "com.fiplab.memory",
+  "version": "1.0.0",
+  "refreshInterval": 60,
+
+  "user_options": [
+    {
+      "title": "Show",
+      "name": "display",
+      "type": "string",
+      "options": [
+        {"title": "Available Memory", "name": "free"},
+        {"title": "Used Memory", "name": "used"},
+        {"title": "Total Memory", "name": "total"},
+      ],
+      "default": "available",
+      "required": true,
+    }
+  ]  
+}

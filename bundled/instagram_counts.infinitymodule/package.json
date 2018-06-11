@@ -1,0 +1,20 @@
+{
+  "name": "Instagram Follower Count",
+  "description": "Displays the total followers for an Instagram account",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "social",
+  "bundleID": "com.fiplab.instagramfollowers",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Username",
+      "name": "username",
+      "type": "string",
+      "tooltip": "The username of the Instagram account",
+      "required": true,
+    },
+  ]  
+}

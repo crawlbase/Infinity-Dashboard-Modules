@@ -1,0 +1,24 @@
+{
+  "name": "Google Play Reports Status",
+  "description": "Displays whether the Google Play reports have been released for today",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "finance",
+  "bundleID": "com.fiplab.googleplay",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Report Type",
+      "name": "type",      
+      "type": "string",
+      "required": true,
+      "default": "free",
+      "options": [
+        {"title": "Free", "name":"free"},
+        {"title": "Paid", "name":"paid"}
+      ]
+    }
+  ]
+}

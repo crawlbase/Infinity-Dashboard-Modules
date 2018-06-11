@@ -1,0 +1,10 @@
+{
+  "name": "CPU Usage",
+  "description": "Displays your current CPU usage",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "utilities",
+  "bundleID": "com.fiplab.cpu_usage",
+  "version": "1.0.0",
+  "refreshInterval": 5
+}

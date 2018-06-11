@@ -1,0 +1,42 @@
+{
+  "name": "Linode Bandwidth",
+  "description": "Displays the bandwidth stats for your Linode account",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "business",
+  "bundleID": "com.fiplab.linode",
+  "version": "1.0.0",
+  "user_options": [
+    {
+      "title": "Personal Access Token",
+      "name": "accessToken",
+      "type": "string",
+      "tooltip": "Your Personal Access Token from Linode",
+      "required": true
+    },
+    {
+      "title": "Show As",
+      "name": "display",
+      "type": "string",
+      "options": [
+        {
+          "title": "Bandwidth Usage",
+          "name": "bandwidth"
+        },
+        {
+          "title": "Bandwidth Usage (Total Bandwidth)",
+          "tooltip": "Example: 1024GB (8000GB)",
+          "name": "bandwidthAndTotal"
+        },
+        {
+          "title": "Bandwidth Usage as a percent",
+          "tooltip": "Example: 24%",
+          "name": "bandwidthPercent"
+        }
+      ],
+      "default": "bandwidthAndTotal",
+      "required": true
+    }
+  ],
+  "dependencies": {}
+}

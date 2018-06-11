@@ -1,0 +1,21 @@
+{
+  "name": "Reddit Karma",
+  "description": "Displays your Karma on Reddit",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "social",
+  "bundleID": "com.fiplab.redditkarma",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Reddit Username",
+      "name": "username",
+      "type": "string",
+      "tooltip": "Your Reddit username",
+      "required": true,
+    },
+
+  ]  
+}

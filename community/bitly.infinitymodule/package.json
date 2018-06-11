@@ -1,0 +1,19 @@
+{
+  "name": "Bit.ly Clicks",
+  "description": "Displays the number of clicks for a bit.ly URL",
+  "author": "Jeremy Hyle",
+  "website": "https://infinitydashboard.com/",
+  "category": "business",
+  "bundleID": "com.jeremyhyle.bitly",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Bit.ly URL",
+      "name": "url",
+      "type": "string",
+      "required": true,
+    }
+  ]  
+}

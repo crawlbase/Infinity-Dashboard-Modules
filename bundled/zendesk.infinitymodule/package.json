@@ -1,0 +1,27 @@
+{
+  "name": "Zendesk Unsolved Tickets",
+  "description": "Displays how many unsolved tickets there are on a Zendesk support account",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "business",
+  "bundleID": "com.fiplab.zendesk",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 300,
+
+  "user_options": [
+    {
+      "title": "Email Address",
+      "name": "email",
+      "type": "string",
+      "tooltip": "Your Zendesk Email Address",
+      "required": true
+    },
+    {
+      "title": "API Token",
+      "name": "token",
+      "type": "string",
+      "tooltip": "Your API Token from Zendesk",
+      "required": true
+    },
+  ]
+}

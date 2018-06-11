@@ -1,0 +1,11 @@
+{
+  "name": "iTunes Reports Status",
+  "description": "Displays whether the iTunes reports have been released for today",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "finance",
+  "bundleID": "com.fiplab.itunes",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+ 
+}

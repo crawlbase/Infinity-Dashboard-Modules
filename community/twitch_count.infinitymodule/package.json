@@ -1,0 +1,19 @@
+{
+  "name": "Twitch Live Viewer Count",
+  "description": "Displays the number of viewers for a Twitch channel",
+  "author": "Jeremy Hyle",
+  "website": "https://infinitydashboard.com/",
+  "category": "business",
+  "bundleID": "com.jeremyhyle.twitch",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 300,
+
+  "user_options": [
+    {
+      "title": "Twitch URL",
+      "name": "url",
+      "type": "string",
+      "required": true,
+    }
+  ]  
+}

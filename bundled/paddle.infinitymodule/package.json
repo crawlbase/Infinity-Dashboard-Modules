@@ -1,0 +1,32 @@
+{
+  "name": "Paddle Earnings Today",
+  "description": "Displays today's current earnings from Paddle.com",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "business",
+  "bundleID": "com.fiplab.paddlerevenue",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+   {
+    "title": "Email",
+    "name": "email",
+    "type": "string",
+    "tooltip": "Your Paddle.com email",
+    "required": true,
+  },
+  {
+    "title": "Password",
+    "name": "password",
+    "type": "string",
+    "tooltip": "Your Paddle.com password",
+    
+    "options": {
+      "secure": true
+    },
+
+    "required": true,
+  },
+]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Website Status Checker",
+  "description": "Displays whether a website is online or offline",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "utilities",
+  "bundleID": "com.fiplab.websitecheck",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 300,
+  "refreshInterval": 300,
+  "hasNotifications": true,
+
+  "user_options": [
+    {
+      "title": "Website URL",
+      "name": "website",      
+      "type": "string",
+      "tooltip": "http://",
+      "required": true,
+    },
+    {
+      "title": "Show Notifications",
+      "name": "showNotifications",      
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    {
+      "title": "Up Text",
+      "name": "up",      
+      "type": "string",
+      "tooltip": "The text to display when the website is down",
+      "default": "Up",
+      "required": true,
+    },
+    {
+      "title": "Down Text",
+      "name": "down",      
+      "type": "string",
+      "tooltip": "The text display when the website is down",
+      "default": "Down",
+      "required": true,
+    }    
+  ]  
+}

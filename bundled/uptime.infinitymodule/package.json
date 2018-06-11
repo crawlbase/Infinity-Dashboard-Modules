@@ -1,0 +1,13 @@
+{
+  "name": "Mac Uptime",
+  "description": "Displays your Mac's uptime",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "utilities",
+  "bundleID": "com.fiplab.uptime",
+  "version": "1.0.0",
+  "dependencies": {
+    "moment": "^2.22.1",
+    "moment-duration-format": "^2.2.2"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Current Weather",
+  "description": "Displays the current temperature and weather for a given location",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "weather",
+  "bundleID": "com.fiplab.weather",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "API Key",
+      "name": "apiKey",      
+      "type": "string",
+      "tooltip": "Your openweathermap.org API Key",
+      "default": "",
+      "required": true,
+    },
+    {
+      "title": "Location",
+      "name": "cityName",
+      "type": "string",
+      "tooltip": "City, State, Country Code\nExample: San Diego, CA, US\nExample: London,UK",
+      "required": true,
+    },
+
+    {
+      "title": "Show As",
+      "name": "returnType",      
+      "type": "string",
+      "options": [
+        {"title": "Temperature", "name":"temperature"},
+        {"title": "Weather Condition", "name":"weather"},
+        {"title": "Temperature - Weather Condition", "name":"both"},
+      ],
+
+      "default": "temperature",
+      "required": true,
+    },
+    {
+      "title": "Show condition as an icon",
+      "name": "useIcon",
+      "type": "boolean",
+      "tooltip": "Use the icon",
+      "required": true,
+    },
+    {
+      "title": "Display Units",
+      "name": "units",      
+      "type": "string",
+      "options": [
+        {"title": "Imperial", "name":"imperial"},
+        {"title": "Metric", "name":"metric"},
+      ],
+
+      "default": "metric",
+      "required": true,
+    },
+  ]  
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Facebook Page Stats",
+  "description": "Displays the total likes/follows for a Facebook page",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "social",
+  "bundleID": "com.fiplab.facebookfollowers",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Page Username",
+      "name": "username",
+      "type": "string",
+      "tooltip": "Username of the Facebook page",
+      "required": true,
+    },
+       {
+      "title": "Show As",
+      "name": "display",      
+      "type": "string",
+      "options": [
+        {"title": "Total Likes", "name":"likes"},
+        {"title": "Total Follows", "name":"follows"},
+        {"title": "Both", "name":"both"},
+      ],
+
+      "default": "likes",
+      "required": true,
+    },
+  ]  
+}

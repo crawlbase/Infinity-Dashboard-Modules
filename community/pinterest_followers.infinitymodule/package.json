@@ -1,0 +1,19 @@
+{
+  "name": "Pinterest Followers",
+  "description": "Displays the number of followers for a Pinterest account",
+  "author": "Jessica Ramirez",
+  "website": "https://infinitydashboard.com/",
+  "category": "business",
+  "bundleID": "com.jessicaramirez.pinterest",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 300,
+
+  "user_options": [
+    {
+      "title": "Pinterst Profile URL",
+      "name": "url",
+      "type": "string",
+      "required": true,
+    }
+  ]  
+}

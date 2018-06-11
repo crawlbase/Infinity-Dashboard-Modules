@@ -1,0 +1,31 @@
+{
+  "name": "Current Strava Fitness",
+  "description": "Shows your current fitness from Strava.com",
+  "author": "Emily Laguna",
+  "website": "https://infinitydashboard.com/",
+  "category": "fitness",
+  "bundleID": "com.emilylaguna.stravafitness",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 300,
+
+  "user_options": [
+    {
+      "title": "Email",
+      "name": "email",
+      "type": "string",
+      "tooltip": "Your Strava.com email",
+      "required": true,
+    },
+    {
+      "title": "Password",
+      "name": "password",
+      "type": "string",
+      "tooltip": "Your Strava.com password",
+      "options": {
+        "secure": true
+      },
+      
+      "required": true,
+    },
+  ]  
+}

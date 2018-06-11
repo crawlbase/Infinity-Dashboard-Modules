@@ -1,0 +1,99 @@
+{
+  "name": "Amazon Price Tracker",
+  "description": "Displays the price changes for a product listed on Amazon",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "finance",
+  "bundleID": "com.fiplab.amazonprice",
+  "version": "1.0.0",
+  "hasNotifications": true,
+  "minimumRefreshInterval": 1800,
+
+  "user_options": [
+    {
+      "title": "Amazon Product URL",
+      "name": "url",
+      "type": "string",
+      "tooltip": "The URL for the Amazon product",
+      "required": true
+    },
+    {
+      "title": "Show As",
+      "name": "display",
+      "type": "string",
+      "options": [
+        {
+          "title": "Current Price",
+          "tooltip": "Example: $55.99",
+          "name": "currentPrice"
+        },
+        {
+          "title": "Current Price (Percent Difference since Price Change)",
+          "tooltip": "Example: $55.99 (-10%)",
+          "name": "currentAndPercent"
+        },
+        {
+          "title": "Current Price (Price Difference since Price Change)",
+          "tooltip": "Example: $55.99 (-$9.99)",
+          "name": "currentAndPriceDiff"
+        },
+      ],
+      "default": "currentAndPriceDiff",
+      "required": true
+    },
+
+    {
+      "title": "Base Price Change On",
+      "name": "priceChange",
+      "type": "string",
+      "default": "firstPrice",
+      "required": true,
+      "options": [
+        {
+          "title": "First Price Recorded",
+          "tooltip": "Base the price change calculations on the first price recorded since monitoring began",
+          "name": "firstPrice"
+        },
+        {
+          "title": "Price Since Last Changed",
+          "tooltip": "Base the price change calculations on the price since the last recorded price changed",
+          "name": "lastPrice"
+        },
+      ]
+    },
+
+    {
+      "title": "Notify Me When the Price",
+      "name": "notification",
+      "type": "string",
+      "default": "decreases",
+      "required": true,
+      "options": [
+        {
+          "title": "None",
+          "tooltip": "You will not be notified for any price changes",
+          "name": "none"
+        },
+        null,
+        {
+          "title": "Changes",
+          "tooltip": "You will be notified when the price for this product changes",
+          "name": "any"
+        },
+        {
+          "title": "Increases",
+          "tooltip": "You will be notified when the price for this product increases",
+          "name": "increase"
+        },
+        {
+          "title": "Decreases",
+          "tooltip": "You will be notified when the price for this product decreases",
+          "name": "decreases"
+        },
+      ]
+    },
+  ],
+  "dependencies": {
+    "moment": "^2.22.1"
+  }
+}

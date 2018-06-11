@@ -1,0 +1,35 @@
+{
+  "name": "iTunes Connect Sales",
+  "description": "Displays yesterday's sales proceeds based on PST (Local) timezone",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "finance",
+  "bundleID": "com.fiplab.itc",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 300,
+  "user_options": [
+    {
+      "title": "Apple ID",
+      "name": "userid",
+      "type": "string",
+      "tooltip": "Apple ID",
+      "required": true
+    },
+    {
+      "title": "Password",
+      "name": "password",
+      "type": "string",
+      "options": {
+        "secure": true
+      },
+      
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "apple-reporter": "^2.2.0",
+    "currency-formatter": "^1.4.2",
+    "moment": "^2.22.1",
+    "xml2js": "^0.4.19"
+  }
+}

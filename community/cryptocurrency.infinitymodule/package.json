@@ -1,0 +1,166 @@
+{
+  "name": "Cryptocurrency Price",
+  "description": "Displays price for a specific cryptocurrency",
+  "author": "Emily Laguna",
+  "website": "https://infinitydashboard.com/",
+  "category": "finance",
+  "bundleID": "com.emilylaguna.crypto",
+  "version": "1.0.0",
+  
+  "minimumRefreshInterval": 300,
+  "refreshInterval": 3600,
+
+  "user_options": [
+    {
+      "title": "Cryptocurrency Symbol",
+      "tooltip": "Examples: BTC, LTC, ETH, etc",
+      "name": "symbol",
+      "type": "string",
+      "required": true
+    },
+    {
+      "title": "Display As",
+      "name": "currency",
+      "type": "string",
+      "default": "USD",
+      "required": true,
+      "options": [
+        {
+          "title": "United States Dollar",
+          "name": "USD"
+        },
+        {
+          "title": "United Arab Emirates Dirham",
+          "name": "AUD"
+        },
+        {
+          "title": "Australian Dollar",
+          "name": "AUD"
+        },
+        {
+          "title": "Brazilian Real",
+          "name": "BRL"
+        },
+        {
+          "title": "Canadian Dollar",
+          "name": "CAD"
+        },
+        {
+          "title": "Swiss Franc",
+          "name": "CHF"
+        },
+        {
+          "title": "Chilean Peso",
+          "name": "CLP"
+        },
+        {
+          "title": "Chinese Yuan",
+          "name": "CNY"
+        },
+        {
+          "title": "Czech Republic Koruna",
+          "name": "CZK"
+        },
+        {
+          "title": "Danish Krone",
+          "name": "DKK"
+        },
+        {
+          "title": "Euro",
+          "name": "EUR"
+        },
+        {
+          "title": "British Pound Sterling",
+          "name": "GBP"
+        },
+        {
+          "title": "Hong Kong Dollar",
+          "name": "HKD"
+        },
+        {
+          "title": "Hungarian Forint",
+          "name": "HUF"
+        },
+        {
+          "title": "Indonesian Rupiah",
+          "name": "IDR"
+        },
+        {
+          "title": "Israeli New Sheqel",
+          "name": "ILS"
+        },
+        {
+          "title": "Indian Rupee",
+          "name": "INR"
+        },
+        {
+          "title": "Japanese Yen",
+          "name": "JPY"
+        },
+        {
+          "title": "South Korean Won",
+          "name": "KRW"
+        },
+        {
+          "title": "Mexican Peso",
+          "name": "MXN"
+        },
+        {
+          "title": "Malaysian Ringgit",
+          "name": "MYR"
+        },
+        {
+          "title": "Norwegian Krone",
+          "name": "NOK"
+        },
+        {
+          "title": "New Zealand Dollar",
+          "name": "NZD"
+        },
+        {
+          "title": "Philippine Peso",
+          "name": "PHP"
+        },
+        {
+          "title": "Pakistani Rupee",
+          "name": "PKR"
+        },
+        {
+          "title": "Polish Zloty",
+          "name": "PLN"
+        },
+        {
+          "title": "Russian Ruble",
+          "name": "RUB"
+        },
+        {
+          "title": "Swedish Krona",
+          "name": "SEK"
+        },
+        {
+          "title": "Singapore Dollar",
+          "name": "SGD"
+        },
+        {
+          "title": "Thai Baht",
+          "name": "THB"
+        },
+        {
+          "title": "Turkish Lira",
+          "name": "TRY"
+        },
+        {
+          "title": "New Taiwan Dollar",
+          "name": "TWD"
+        },
+        {
+          "title": "South African Rand",
+          "name": "ZAR"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "currency-formatter": "^1.4.2"
+  }
+}

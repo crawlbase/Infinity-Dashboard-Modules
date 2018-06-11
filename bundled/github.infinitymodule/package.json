@@ -1,0 +1,33 @@
+{
+  "name": "GitHub Project Stats",
+  "description": "Displays information about a public GitHub Repo",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "business",
+  "bundleID": "com.fiplab.github",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Github Repo URL",
+      "name": "url",
+      "type": "string",
+      "tooltip": "The URL of the repo you want to watch",
+      "required": true,
+    },
+{
+      "title": "Display",
+      "name": "display",      
+      "type": "string",
+      "options": [
+        {"title": "Stars", "name":"stars"},
+        {"title": "Issues", "name":"issues"},
+        {"title": "Stars (Issues)", "name":"both"},
+      ],
+
+      "default": "both",
+      "required": true,
+    },
+  ]  
+}

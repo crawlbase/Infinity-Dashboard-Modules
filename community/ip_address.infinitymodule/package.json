@@ -1,0 +1,12 @@
+{
+  "name": "Your Remote IP address",
+  "description": "Displays your remote IP Address",
+  "author": "Emily Laguna",
+  "website": "https://infinitydashboard.com/",
+  "category": "utility",
+  "bundleID": "com.emilylaguna.ipaddress",
+  "version": "1.0.0",
+
+  "minimumRefreshInterval": 3600,
+  "refreshInterval": 3600,
+}

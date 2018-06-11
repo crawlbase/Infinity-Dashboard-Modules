@@ -1,0 +1,23 @@
+{
+  "name": "Alexa Rank",
+  "description": "Displays the Alexa rank for a website",
+  "author": "Jeremy Hyle",
+  "website": "https://infinitydashboard.com/",
+  "category": "business",
+  "bundleID": "com.jeremyhyle.alexa",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 300,
+  "refreshInterval": 3600,
+  
+  "user_options": [
+    {
+      "title": "Website URL",
+      "name": "url",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "xml2js": "^0.4.19"
+  }
+}

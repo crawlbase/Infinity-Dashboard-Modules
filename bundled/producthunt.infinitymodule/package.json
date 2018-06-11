@@ -1,0 +1,20 @@
+{
+  "name": "Product Hunt Upvotes",
+  "description": "Displays the total upvotes for a Product Hunt submission",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "social",
+  "bundleID": "com.fiplab.producthunt",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Product Hunt URL",
+      "name": "url",
+      "type": "string",
+      "tooltip": "The URL of the Product Hunt item you want to track",
+      "required": true,
+    },
+  ]  
+}

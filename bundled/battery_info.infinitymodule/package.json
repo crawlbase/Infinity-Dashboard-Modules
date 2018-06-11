@@ -1,0 +1,31 @@
+{
+  "name": "MacBook Battery Info",
+  "description": "Displays statistics about your MacBook's battery",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "utilities",
+  "bundleID": "com.fiplab.batteryinfo",
+  "version": "1.0.0",
+  "user_options": [
+    {
+      "title": "Display",
+      "name": "display",      
+      "type": "string",
+      "options": [
+        {"title": "Health", "name":"health"},
+        {"title": "Current Max", "name":"current"},
+        {"title": "Original Max", "name":"original"},
+
+        {"title": "Charge Level", "name":"charge_level"},
+        {"title": "Time Remaining", "name":"time_remaining"},
+      ],
+
+      "default": "charge_level",
+      "required": true,
+    }
+  ],
+
+  "dependencies": {
+    "node-power-info": "^1.0.3"
+  }
+}

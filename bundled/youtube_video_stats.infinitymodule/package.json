@@ -1,0 +1,42 @@
+{
+  "name": "YouTube Video Stats",
+  "description": "Displays the current view, comment, like, dislike, or favorite counts for a specific YouTube Video",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "social",
+  "bundleID": "com.fiplab.youtube",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "YouTube API Key",
+      "name": "apiKey",
+      "type": "string",
+      "tooltip": "Your YouTube API Key",
+      "default": "",
+      "required": true
+    },
+    {
+      "title": "YouTube Video ID",
+      "name": "videoID",
+      "type": "string",
+      "tooltip": "",
+      "required": true
+    },
+    {
+      "title": "Show",
+      "name": "display",
+      "type": "string",
+      "options": [
+        {"title": "View Count", "name": "viewCount"},
+        {"title": "Comment Count", "name": "commentCount"},
+        {"title": "Like Count", "name": "likeCount"},
+        {"title": "Dislike Count", "name": "dislikeCount"},
+        {"title": "Favorite Count", "name": "favoriteCount"}
+      ],
+      "default": "subscriberCount",
+      "required": true,
+    },
+  ]
+}

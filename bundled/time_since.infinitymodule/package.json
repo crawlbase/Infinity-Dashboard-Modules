@@ -1,0 +1,41 @@
+{
+  "name": "Time Passed Since",
+  "description": "Displays the time since a specific date and time in the past",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "utilities",
+  "bundleID": "com.fiplab.timesince",
+  "version": "1.0.0",
+  "refreshInterval": 60,
+  "user_options": [
+    {
+      "title": "Date",
+      "name": "date",
+      "type": "date",
+      "required": true,
+      "options": {
+        "allowsDate": true,
+        "allowsTime": true
+      }
+    },
+    {
+      "title": "Show As",
+      "name": "display",      
+      "type": "number",
+      "options": [
+        {"title": "hours / mins / seconds", "name":0},
+        {"title": "days / hours / mins", "name":1},
+        {"title": "weeks / days / hours", "name":2},
+        {"title": "months / weeks / days", "name":3},
+        {"title": "years / weeks / days", "name":4}
+      ],
+
+      "default": 3,
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "moment": "^2.22.1",
+    "moment-countdown": "0.0.3"
+  }
+}

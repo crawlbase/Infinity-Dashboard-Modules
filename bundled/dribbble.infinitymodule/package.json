@@ -1,0 +1,20 @@
+{
+  "name": "Dribbble Stats",
+  "description": "Displays the number of likes for a Dribbble shot or the number of followers for a profile",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "business",
+  "bundleID": "com.fiplab.dribbble",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Dribbble URL",
+      "name": "url",
+      "type": "string",
+      "tooltip": "The URL of the shot/profile you want to watch",
+      "required": true,
+    }
+  ]  
+}

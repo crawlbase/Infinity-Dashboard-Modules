@@ -1,0 +1,28 @@
+{
+  "name": "Twitter Followers",
+  "description": "Displays the number of followers for a Twitter account",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "social",
+  "bundleID": "com.fiplab.twitterfollowers",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+
+  "user_options": [
+    {
+      "title": "Twitter username",
+      "name": "username",
+      "type": "string",
+      "tooltip": "Username of the Twitter account",
+      "required": true,
+    },
+     {
+      "title": "Show compressed value",
+      "name": "showCompressed",
+      "type": "boolean",
+      "tooltip": "Show a compressed value or the raw value? (200k vs 200,000)",
+      "required": true,
+      "default": true,
+    }
+  ]  
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Available Disk Space",
+  "description": "Displays how much space you have left on your main HD",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "business",
+  "bundleID": "com.fiplab.diskspace",
+  "version": "1.0.0",
+  "dependencies": {
+    "systeminformation": "^3.41.3"
+  },
+
+  "user_options": [
+    {
+      "title": "Show as percentage",
+      "name": "usePercent",
+      "type": "boolean",
+      "default": true,
+      "required": true,
+    }
+  ]
+}

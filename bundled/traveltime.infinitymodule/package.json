@@ -1,0 +1,30 @@
+{
+  "name": "Travel Time",
+  "description": "Displays how long it will take by car in current traffic to get to a destination",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "travel",
+  "bundleID": "com.fiplab.traveltime",
+  "version": "1.0.0",
+  "minimumRefreshInterval": 600,
+  "refreshInterval": 1800,
+
+  "user_options": [
+    {
+      "title": "Start Address",
+      "name": "startAddress",
+      "type": "string",
+      "required": true
+    },
+    {
+      "title": "Destination Address",
+      "name": "endAddress",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "moment": "^2.22.1",
+    "moment-countdown": "0.0.3"
+  }
+}

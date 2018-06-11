@@ -1,0 +1,82 @@
+{
+  "name": "Fitbit Stats",
+  "description": "Displays stats from your Fitbit account",
+  "author": "FIPLAB Ltd",
+  "website": "https://infinitydashboard.com/",
+  "category": "health",
+  "bundleID": "com.fiplab.fitbit",
+  "version": "1.0.0",
+  "hasNotifications": true,
+  "user_options": [
+    {
+      "title": "Show As",
+      "name": "display",
+      "type": "string",
+      "options": [
+        {
+          "title": "Current Steps",
+          "name": "steps"
+        },
+        {
+          "title": "Weight",
+          "name": "weight"
+        },
+        {
+          "title": "Body Fat %",
+          "name": "bodyFat"
+        },
+        {
+          "title": "Weight (Body Fat %)",
+          "name": "weightAndBodyFat"
+        }
+      ],
+      "default": "steps",
+      "required": true
+    },
+    {
+      "title": "Units",
+      "name": "units",
+      "type": "string",
+      "options": [
+        {
+          "title": "Imperial",
+          "name": "imperial"
+        },
+        {
+          "title": "Metric",
+          "name": "metric"
+        }
+      ],
+      "default": "metric",
+      "required": true
+    },
+    {
+      "title": "Client ID",
+      "name": "clientID",
+      "type": "string",
+      "tooltip": "The ID for the OAuth client",
+      "required": true
+    },
+    {
+      "title": "Client Secret",
+      "name": "secret",
+      "type": "string",
+      "tooltip": "The secret key for the OAuth client",
+      "required": true
+    },
+    {
+      "title": "Port to bind the server to",
+      "name": "port",
+      "type": "number",
+      "default": 3001,
+      "tooltip": "Needs to be unique.",
+      "required": true
+    },
+
+  ],
+  "dependencies": {
+    "express": "^4.16.3",
+    "moment": "^2.22.1",
+    "simple-oauth2": "^1.5.2"
+  }
+}
