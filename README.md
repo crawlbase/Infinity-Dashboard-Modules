@@ -1,2 +1,2 @@
-# Infinitydashboard
+# Infinity Dashboard
 Infinity Dashboard Modules
