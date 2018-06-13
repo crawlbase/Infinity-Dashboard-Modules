@@ -16,7 +16,7 @@ Contributions are submitted, reviewed, and accepted using GitHub pull requests. 
 Some modules require additional resources before they'll work. You can run `npm install` on the module you want to edit to install all the required node modules.
 
 ## Can I improve or fix bugs with the existing modules?
-Of course, create a pull request with your changes and our development team will look review it.
+Of course, create a pull request with your changes and our development team will review it.
 
 ## Reporting bugs/issues
 Issues with any of the modules can be reported by creating a [New Issue](https://github.com/fiplab/Infinity-Dashboard-Modules/issues/new) on this repo. 
