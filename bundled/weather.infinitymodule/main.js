@@ -9,28 +9,31 @@ let returnType = arguments.returnType;
 var urlFormat, coord, lat, lon, locate;
 
 var locationFormat = fiplab.arguments.locationFormat;
-var loc = fiplab.arguments.loc;
+var cityName = fiplab.arguments.cityName;
 
 switch (locationFormat) {
-  case 'cityName':
+  case 'city':
     urlFormat = 'http://api.openweathermap.org/data/2.5/weather?q=%s&units=%s&appid=%s';
-    options = { 'url': util.format(urlFormat, arguments.loc, arguments.units, arguments.apiKey) }
+    options = { 'url': util.format(urlFormat, arguments.cityName, arguments.units, arguments.apiKey) }
     break;
   case 'zipCode':
     urlFormat = 'http://api.openweathermap.org/data/2.5/weather?zip=%s&units=%s&appid=%s';
-    options = { 'url': util.format(urlFormat, arguments.loc, arguments.units, arguments.apiKey) }
+    options = { 'url': util.format(urlFormat, arguments.cityName, arguments.units, arguments.apiKey) }
     break;
   case 'cityID': 
     urlFormat = 'http://api.openweathermap.org/data/2.5/weather?id=%s&units=%s&appid=%s';
-    options = { 'url': util.format(urlFormat, arguments.loc, arguments.units, arguments.apiKey) }
+    options = { 'url': util.format(urlFormat, arguments.cityName, arguments.units, arguments.apiKey) }
     break;
   case 'coordinates':
-    coord = loc.split(',');
-    lat = coord[0].trim();
-    lon = coord[1].trim();
-    locate = "lat="+lat+"&lon="+lon;
-    urlFormat = 'http://api.openweathermap.org/data/2.5/weather?%s&units=%s&appid=%s';
-    options = { 'url': util.format(urlFormat, locate, arguments.units, arguments.apiKey) }
+    if (cityName.indexOf(',') > -1) {
+      coord = cityName.split(',');
+      lat = coord[0].trim();
+      lon = coord[1].trim();
+      locate = "lat="+lat+"&lon="+lon;
+      urlFormat = 'http://api.openweathermap.org/data/2.5/weather?%s&units=%s&appid=%s';
+      options = { 'url': util.format(urlFormat, locate, arguments.units, arguments.apiKey) }
+    }
+    else fiplab.exit('Invalid coordinates. Missing comma!', false);
     break;
 }
 
