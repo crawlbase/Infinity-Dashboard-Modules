@@ -1,7 +1,7 @@
 {
-  "name": "lifetime.infinitymodule",
+  "name": "Percentage Lived",
   "version": "1.0.0",
-  "description": "This will return the percentage of your life you have lived.",
+  "description": "This will return the percentage of your life you have lived. You set the life expectancy (the default is 85 years) and your birthday.",
   "main": "main.js",
   "scripts": {
   },
