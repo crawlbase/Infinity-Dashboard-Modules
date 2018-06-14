@@ -33,7 +33,7 @@ switch (locationFormat) {
       urlFormat = 'http://api.openweathermap.org/data/2.5/weather?%s&units=%s&appid=%s';
       options = { 'url': util.format(urlFormat, locate, arguments.units, arguments.apiKey) }
     }
-    else fiplab.exit('Invalid coordinates. Missing comma!', false);
+    else fiplab.exit('Invalid coordinates.', false);
     break;
 }
 
