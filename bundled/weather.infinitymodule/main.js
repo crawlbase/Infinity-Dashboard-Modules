@@ -6,11 +6,36 @@ let arguments = fiplab.arguments;
 
 let returnType = arguments.returnType;
 
-let urlFormat = 'http://api.openweathermap.org/data/2.5/weather?q=%s&units=%s&appid=%s';
-let options = {
-  'url': util.format(urlFormat, arguments.cityName, arguments.units, arguments.apiKey)
-}
+var urlFormat, coord, lat, lon, locate;
 
+var locationFormat = fiplab.arguments.locationFormat;
+var cityName = fiplab.arguments.cityName;
+
+switch (locationFormat) {
+  case 'city':
+    urlFormat = 'http://api.openweathermap.org/data/2.5/weather?q=%s&units=%s&appid=%s';
+    options = { 'url': util.format(urlFormat, arguments.cityName, arguments.units, arguments.apiKey) }
+    break;
+  case 'zipCode':
+    urlFormat = 'http://api.openweathermap.org/data/2.5/weather?zip=%s&units=%s&appid=%s';
+    options = { 'url': util.format(urlFormat, arguments.cityName, arguments.units, arguments.apiKey) }
+    break;
+  case 'cityID': 
+    urlFormat = 'http://api.openweathermap.org/data/2.5/weather?id=%s&units=%s&appid=%s';
+    options = { 'url': util.format(urlFormat, arguments.cityName, arguments.units, arguments.apiKey) }
+    break;
+  case 'coordinates':
+    if (cityName.indexOf(',') > -1) {
+      coord = cityName.split(',');
+      lat = coord[0].trim();
+      lon = coord[1].trim();
+      locate = "lat="+lat+"&lon="+lon;
+      urlFormat = 'http://api.openweathermap.org/data/2.5/weather?%s&units=%s&appid=%s';
+      options = { 'url': util.format(urlFormat, locate, arguments.units, arguments.apiKey) }
+    }
+    else fiplab.exit('Invalid coordinates. Missing comma!', false);
+    break;
+}
 
 function getEmojiWithJSON(json){
   let emojiMap = {

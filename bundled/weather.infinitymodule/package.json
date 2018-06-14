@@ -1,61 +1,104 @@
 {
-  "name": "Current Weather",
-  "description": "Displays the current temperature and weather for a given location",
-  "author": "FIPLAB Ltd",
-  "website": "https://infinitydashboard.com/",
-  "category": "weather",
-  "bundleID": "com.fiplab.weather",
-  "version": "1.0.0",
-  "minimumRefreshInterval": 600,
-
-  "user_options": [
+  "name" : "Current Weather",
+  "description" : "Displays the current temperature and weather for a given location",
+  "author" : "FIPLAB Ltd",
+  "website" : "https://infinitydashboard.com/",
+  "contributors" : [
+    "GEMA-SOFT AP"
+  ],
+  "category" : "weather",
+  "bundleID" : "com.fiplab.weather",
+  "version" : "1.0.1",
+  "minimumRefreshInterval" : 600,
+  "user_options" : [
     {
-      "title": "API Key",
-      "name": "apiKey",      
-      "type": "string",
-      "tooltip": "Your openweathermap.org API Key",
-      "default": "",
-      "required": true,
+      "title" : "API Key",
+      "name" : "apiKey",
+      "type" : "string",
+      "tooltip" : "Your openweathermap.org API Key",
+      "default" : "",
+      "required" : true
     },
     {
-      "title": "Location",
-      "name": "cityName",
-      "type": "string",
-      "tooltip": "City, State, Country Code\nExample: San Diego, CA, US\nExample: London,UK",
-      "required": true,
-    },
-
-    {
-      "title": "Show As",
-      "name": "returnType",      
-      "type": "string",
-      "options": [
-        {"title": "Temperature", "name":"temperature"},
-        {"title": "Weather Condition", "name":"weather"},
-        {"title": "Temperature - Weather Condition", "name":"both"},
+      "title" : "Location Format",
+      "name" : "locationFormat",
+      "type" : "string",
+      "options" : [
+        {
+          "title" : "City, Country Code",
+          "name" : "city",
+          "type" : "string"
+        },
+        {
+          "title" : "Zip Code, Country Code",
+          "name" : "zipCode",
+          "type" : "string"
+        },
+        {
+          "title" : "Coordinates (latitude, longitude)",
+          "name" : "coordinates",
+          "type" : "number"
+        },
+        {
+          "title" : "City by ID",
+          "name" : "cityID",
+          "type" : "number"
+        }
       ],
-
-      "default": "temperature",
-      "required": true,
+      "default" : "cityName",
+      "required" : true
     },
     {
-      "title": "Show condition as an icon",
-      "name": "useIcon",
-      "type": "boolean",
-      "tooltip": "Use the icon",
-      "required": true,
+      "title" : "Location",
+      "name" : "cityName",
+      "type" : "string",
+      "tooltip" : "City, Country Code (Atlanta, US)\nZip Code, Country Code (30096, US)\nLatitude, Longitude (33.99, -84.14)\nCity by ID (2172797)",
+      "required" : true
     },
     {
-      "title": "Display Units",
-      "name": "units",      
-      "type": "string",
-      "options": [
-        {"title": "Imperial", "name":"imperial"},
-        {"title": "Metric", "name":"metric"},
+      "title" : "Show As",
+      "name" : "returnType",
+      "type" : "string",
+      "options" : [
+        {
+          "title" : "Temperature",
+          "name" : "temperature"
+        },
+        {
+          "title" : "Weather Condition",
+          "name" : "weather"
+        },
+        {
+          "title" : "Temperature - Weather Condition",
+          "name" : "both"
+        }
       ],
-
-      "default": "metric",
-      "required": true,
+      "default" : "temperature",
+      "required" : true
     },
-  ]  
+    {
+      "title" : "Show condition as an icon",
+      "name" : "useIcon",
+      "type" : "boolean",
+      "tooltip" : "Use the icon",
+      "required" : true
+    },
+    {
+      "title" : "Display Units",
+      "name" : "units",
+      "type" : "string",
+      "options" : [
+        {
+          "title" : "Imperial",
+          "name" : "imperial"
+        },
+        {
+          "title" : "Metric",
+          "name" : "metric"
+        }
+      ],
+      "default" : "metric",
+      "required" : true
+    }
+  ]
 }

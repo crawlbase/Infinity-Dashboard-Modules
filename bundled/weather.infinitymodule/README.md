@@ -1,6 +1,8 @@
-::::: Warning :::::::::::::::::::::::::::::::::::::::::
-**REQUIRED** --- An OpenWeatherMap.org API Key is required to use this module.
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+---
+**REQUIRED:** An OpenWeatherMap.org API Key is required to use this module. 
+
+---
 
 # Steps to finish setup
 
@@ -21,9 +23,11 @@ Fill out the form so it looks like this, then click the <kbd>Save</kbd> button t
 
 
 ## Locating your API Key
-::::: Warning :::::::::::::::::::::::::::::::::::::::::
+
+---
 The API keys for newly created accounts will not be activated for 10 - 30 minutes after signing up. If the module doesn't work immediately, then please wait a few minutes then try again.
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+---
 
 * Click the following link to open the [API Keys page](https://home.openweathermap.org/api_keys)
 * Once the page loads the default API Key will be listed under the **Key** section in the table (See Below)
@@ -41,10 +45,25 @@ The API keys for newly created accounts will not be activated for 10 - 30 minute
 * Click the **Your openweathermap.org API Key** text field
 * Paste the copied API Key into the field.
 
-::::: Alert :::::::::::::::::::::::::::::::::::::::::
-**Tip** --- You can reuse this API key for multiple modules. You can <kbd>Right Click</kbd> the module in the list and select the <kbd>Duplicate</kbd> option to copy it and _ALL_ of it's configuration into a new module.
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+---
+**Tip:** You can reuse this API key for multiple modules. You can <kbd>Right Click</kbd> the module in the list and select the <kbd>Duplicate</kbd> option to copy it and _ALL_ of it's configuration into a new module.
 
-::::: Success :::::::::::::::::::::::::::::::::::::::::
-**Success** --- You can now finish configuring the module by entering a location in the **Location** configuration option. 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::
+---
+**Success:**  You can now finish configuring the module by entering a location in the **Location** configuration option. 
+
+---
+
+### Valid Location Formats:
+* City, Country Code: 
+  * Atlanta, US
+  * Berlin, DE
+* Zip Code, Country Code:
+  * 30303, US
+  * 10115, DE
+* Coordinates (latitude, longitude):
+  * 33.75, -84.38
+  * 52.520008, 13.404954
+* City by ID:
+  * 4180439
+  * 2950159
+
