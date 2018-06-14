@@ -1,0 +1,45 @@
+{
+  "name": "Percentage Lived",
+  "version": "1.0.0",
+  "description": "This will return the percentage of your life you have lived. You set the life expectancy (the default is 85 years) and your birthday.",
+  "main": "main.js",
+  "scripts": {
+  },
+  "keywords": [
+    "Infinity",
+    "Dashboard",
+    "Node.js"
+  ],
+  "author": "Richard Guay",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.22.2"
+  },
+  "bundleID": "com.customct.infinitydashboard.lifetime",
+  "website": "http://customct.com",
+  "refreshInterval": 3600,
+  "category": "Lifestyle",
+  "user_options": [
+    {
+      "title": "Date of Birth",
+      "name": "datebirth",
+      "type": "date",
+      "options": {
+        "allowsDate": true,
+        "allowsTime": false
+      },
+      "required": true
+    },
+    {
+      "title": "Life Expectancy",
+      "name": "lifeexp",
+      "type": "number",
+      "options": {
+        "min": 5,
+        "max": 120
+      },
+      "default": 85,
+      "required": true
+    }
+  ]
+}
